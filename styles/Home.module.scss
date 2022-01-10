@@ -1,0 +1,17 @@
+.root {
+  display: grid;
+  place-items: center center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  align-items: center;
+}
+
+.preview {
+  border-radius: 12px;
+  overflow: hidden;
+}
