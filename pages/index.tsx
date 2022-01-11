@@ -9,7 +9,7 @@ const Home: NextPage = () => {
 
   const fetchData = async (event: FormEvent) => {
     event.preventDefault();
-    const response = await fetch(`/api/puppeteer?url=${url}`);
+    const response = await fetch(`/api?url=${url}`);
     const { data } = await response.json();
     setData(data);
   };

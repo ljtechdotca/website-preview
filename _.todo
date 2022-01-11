@@ -1,0 +1,6 @@
+☐ production broken
+  make it work in production with a headless chromium browser / docker env 
+or
+  maybe try out playwright :`https://github.com/vercel/vercel/discussions/4903`
+
+☐ add a download button
