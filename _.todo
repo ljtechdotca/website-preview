@@ -1,6 +1,10 @@
 ☐ production broken
   make it work in production with a headless chromium browser / docker env 
 or
-  maybe try out playwright :`https://github.com/vercel/vercel/discussions/4903`
+  ✘ maybe try out playwright @cancelled(22-01-11 07:52)
+    samme issue as puppeteer / missing browser depedency
+    `https://github.com/vercel/vercel/discussions/4903`
+
+  ☐ try chrome-aws-lambda
 
 ☐ add a download button
