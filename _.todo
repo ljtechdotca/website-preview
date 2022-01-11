@@ -1,10 +1,11 @@
-☐ production broken
+✔ production broken @done(22-01-11 08:00)
   make it work in production with a headless chromium browser / docker env 
 or
   ✘ maybe try out playwright @cancelled(22-01-11 07:52)
     samme issue as puppeteer / missing browser depedency
     `https://github.com/vercel/vercel/discussions/4903`
+  ✔ try chrome-aws-lambda @done(22-01-11 07:59)
 
-  ☐ try chrome-aws-lambda
-
-☐ add a download button
+  ✔ previous images base64 strings can be stored in an array @done(22-01-11 08:43)
+✔ add a download button @done(22-01-11 08:56)
+✔ loading responsne @done(22-01-11 09:13)

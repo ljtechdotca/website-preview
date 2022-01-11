@@ -3,25 +3,27 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: #f7f7f7;
+}
+
 form {
   display: flex;
   column-gap: 1rem;
 }
 
 img {
-  &:not([src]) {
-    border: 1px solid #ddd;
-  }
+  border: 2px solid #dddddd;
 }
 
 input {
   font-size: 1rem;
   border-radius: 6px;
-  border: 2px solid #ddd;
+  border: 2px solid #dddddd;
   padding: 0.5rem;
 }
 
-button {
+a, button {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 600;

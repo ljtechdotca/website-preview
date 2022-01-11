@@ -1,5 +1,6 @@
 import chromium from "chrome-aws-lambda";
 import type { NextApiRequest, NextApiResponse } from "next";
+import { Img } from "../../types";
 
 type Payload = {
   status: boolean;
@@ -23,20 +24,6 @@ export const handler = async (
   try {
     switch (method) {
       case "GET":
-        // playwright
-        // const browser = await playwright.chromium.launch();
-        // const context = await browser.newContext();
-        // const page = await context.newPage();
-        // await page.goto(url as string);
-        // const screenshot = await page.screenshot({
-        //   path: `screenshot.png`,
-        // });
-        // await browser.close();
-
-        // payload.status = true;
-        // payload.message = "Good";
-        // payload.data = `data:image/png;base64,${screenshot.toString("base64")}`;
-
         // puppeteer
         const browser = await chromium.puppeteer.launch({
           args: [
@@ -56,7 +43,11 @@ export const handler = async (
 
         payload.status = true;
         payload.message = "Good";
-        payload.data = `data:image/png;base64,${base64}`;
+        payload.data = {
+          id: base64.slice(108, 140),
+          src: `data:image/png;base64,${base64}`,
+          url,
+        } as Img;
 
         res.status(200).json(payload);
 

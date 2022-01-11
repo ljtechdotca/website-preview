@@ -1,0 +1,9 @@
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="960" height="540" fill="#FFFFFF" />
+    <path d="M480 220L523.301 245V295L480 320L436.699 295V245L480 220Z" fill="#FFFFFF" />
+    <path d="M480 220L523.301 245V295L480 320L436.699 295V245L480 220Z" fill="#7B61FF" fill-opacity="0.5" />
+    <path d="M480 220V320L436.699 295V245L480 220Z" fill="#7B61FF" fill-opacity="0.5" />
+    <path d="M480 220L436.699 295V245L480 220Z" fill="#7B61FF" fill-opacity="0.5" />
+    <path d="M480 220L523.301 245V295L480 220Z" fill="#7B61FF" fill-opacity="0.5" />
+    <path d="M436.699 295H523.301L480 320L436.699 295Z" fill="#7B61FF" fill-opacity="0.5" />
+</svg>
