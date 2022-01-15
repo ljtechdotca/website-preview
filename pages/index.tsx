@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
+import { Meta } from "@components";
+import styles from "@styles/Home.module.scss";
+import { Img } from "@types";
 import type { NextPage } from "next";
 import { FormEvent, useState } from "react";
-import styles from "../styles/Home.module.scss";
-import { Img } from "../types";
 
 const Home: NextPage = () => {
   const [url, setUrl] = useState<string>("");
@@ -31,9 +32,25 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.root}>
-      <header className={styles.header}>
-        {img && <p>screenshot preview of {img.url}</p>}
-      </header>
+      <Meta
+        title="Website Preview"
+        description="Take a screenshot of a website using this website preview tool."
+      />
+      {img && (
+        <header className={styles.header}>
+          <p>
+            screenshot preview of{" "}
+            <a
+              className={styles.link}
+              href={img.url}
+              rel="noreferrer"
+              target="_blank"
+            >
+              {img.url}
+            </a>
+          </p>
+        </header>
+      )}
       <div className={styles.container}>
         <img
           className={styles.preview}
